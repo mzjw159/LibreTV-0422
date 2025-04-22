@@ -337,7 +337,7 @@
             }
 
             // 设置页面标题
-            document.title = currentVideoTitle + ' - LibreTV播放器';
+            document.title = currentVideoTitle + ' - 躺平观影厅';
             document.getElementById('videoTitle').textContent = currentVideoTitle;
             
             // 初始化播放器
@@ -515,11 +515,11 @@
                 chromecast: true,                // 启用Chromecast投屏功能
                 contextmenu: [                   // 自定义右键菜单
                     {
-                        text: '关于 LibreTV',
-                        link: 'https://github.com/bestzwei/LibreTV'
+                        text: '关于躺平观影厅',
+                        link: 'https://tv.eve.cc/about.html'
                     },
                     {
-                        text: '问题反馈',
+                        text: '特别鸣谢LibreTV',
                         click: (player) => {
                             window.open('https://github.com/bestzwei/LibreTV/issues', '_blank');
                         }

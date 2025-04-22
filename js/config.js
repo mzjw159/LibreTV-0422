@@ -12,9 +12,9 @@ const PASSWORD_CONFIG = {
 
 // 网站信息配置
 const SITE_CONFIG = {
-    name: 'LibreTV',
-    url: 'https://libretv.is-an.org',
-    description: '免费在线视频搜索与观看平台',
+    name: '躺平观影厅',
+    url: 'https://tv.eve.cc',
+    description: '专治各种不想动的观影强迫症患者',
     logo: 'https://images.icon-icons.com/38/PNG/512/retrotv_5520.png',
     version: '1.0.3'
 };
@@ -22,106 +22,44 @@ const SITE_CONFIG = {
 // API站点配置
 const API_SITES = {
     heimuer: {
-        api: 'https://json.heimuer.xyz',
-        name: '黑木耳',
+        api: 'https://json.heimuer.xyz/',
+        name: 'json.heimuer.xyz',
         detail: 'https://heimuer.tv'
     },
     ffzy: {
-        api: 'http://ffzy5.tv',
-        name: '非凡影视',
-        detail: 'http://ffzy5.tv'
+        api: 'http://ffzy1.tv',
+        name: 'ffzy1.tv',
+        detail: 'http://ffzy1.tv'
     },
     tyyszy: {
-        api: 'https://tyyszy.com',
-        name: '天涯资源',
-    },
-    ckzy: {
-        api: 'https://www.ckzy1.com',
-        name: 'CK资源',
-        adult: true
+        api: 'https://tyyszyapi.com/',
+        name: 'tyyszyapi.com',
     },
     zy360: {
-        api: 'https://360zy.com',
-        name: '360资源',
+        api: 'https://360zy1.com',
+        name: '360zy1.com',
     },
     wolong: {
-        api: 'https://wolongzyw.com',
-        name: '卧龙资源',
-    },
-    cjhw: {
-        api: 'https://cjhwba.com',
-        name: '新华为',
-    },
-    hwba: {
-        api: 'https://cjwba.com',
-        name: '华为吧资源',
+        api: 'https://wolongzy.cc',
+        name: 'wolongzy.cc',
     },
     jisu: {
-        api: 'https://jszyapi.com',
-        name: '极速资源',
-        detail: 'https://jszyapi.com'
-    },
-    dbzy: {
-        api: 'https://dbzy.com',
-        name: '豆瓣资源',
-    },
-    bfzy: {
-        api: 'https://bfzyapi.com',
-        name: '暴风资源',
+        api: 'https://www.jisuziyuan.com/',
+        name: 'www.jisuziyuan.com/',
+        detail: 'https://jisuziyuan.com'
     },
     mozhua: {
         api: 'https://mozhuazy.com',
-        name: '魔爪资源',
+        name: 'mozhuazy.com',
     },
     mdzy: {
         api: 'https://www.mdzyapi.com',
-        name: '魔都资源',
+        name: 'www.mdzyapi.com',
     },
     ruyi: {
         api: 'https://cj.rycjapi.com',
-        name: '如意资源',
-    },
-    jkun: {
-        api: 'https://jkunzyapi.com',
-        name: 'jkun资源',
-        adult: true
-    },
-    bwzy: {
-        api: 'https://api.bwzym3u8.com',
-        name: '百万资源',
-        adult: true
-    },
-    souav: {
-        api: 'https://api.souavzy.vip',
-        name: 'souav资源',
-        adult: true
-    },
-    r155: {
-        api: 'https://155api.com',
-        name: '155资源',
-        adult: true
-    },
-    lsb: {
-        api: 'https://apilsbzy1.com',
-        name: 'lsb资源',
-        adult: true
-    },
-    huangcang: {
-        api: 'https://hsckzy.vip',
-        name: '黄色仓库',
-        adult: true,
-        detail: 'https://hsckzy.vip'
-    },
-    zuid: {
-        api: 'https://api.zuidapi.com',
-        name: '最大资源'
-    },
-    yutu: {
-        api: 'https://yutuzy10.com',
-        name: '玉兔资源',
-        adult: true
+        name: 'cj.rycjapi.com',
     }
-    // 您可以按需添加更多源
 };
 
 // 添加聚合搜索的配置选项
@@ -192,7 +130,7 @@ const SECURITY_CONFIG = {
 // 添加多个自定义API源的配置
 const CUSTOM_API_CONFIG = {
     separator: ',',           // 分隔符
-    maxSources: 5,            // 最大允许的自定义源数量
+    maxSources: 0,            // 最大允许的自定义源数量
     testTimeout: 5000,        // 测试超时时间(毫秒)
     namePrefix: 'Custom-',    // 自定义源名称前缀
     validateUrl: true,        // 验证URL格式
@@ -201,5 +139,5 @@ const CUSTOM_API_CONFIG = {
     adultPropName: 'isAdult' // 用于标记成人内容的属性名
 };
 
-// 新增隐藏内置黄色采集站API的变量，默认为true
+// 新增隐藏内置敏感采集站API的变量，默认为true
 const HIDE_BUILTIN_ADULT_APIS = true;
